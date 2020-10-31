@@ -1,73 +1,3 @@
-.shadow {
-    box-shadow: 2px 2px 15px rgba(0, 0, 0, .5);
-    background-color: gray;
-}
-
-.shadow.toppage {
-    box-shadow: 0 0 0 transparent !important;
-    background-color: transparent;
-}
-
-.navbar {
-    background-color: gray;
-    top: 0;
-}
-
-.navbar.toppage {
-    background-color: transparent !important;
-}
-
-.nav-icon {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    background-image: url('../image/TRIAlogo.png');
-    background-size:     cover;
-    background-repeat:   no-repeat;
-    background-position: center center;
-}
-
-.circle {
-    left: 0; 
-    right: 0; 
-    top: 0; 
-    bottom: 0;
-    padding: 10px;
-    padding-top: 5px;
-}
-
-.circle-base {
-    height: 130%;
-    width: 5rem;
-}
-
-.circle-relative {
-    padding-top: 100%;
-}
-
-.rounded-circle {
-    border-width: 0;
-}
-
-.text-style {
-    font-family: 'Rationale', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 42px;
-
-    align-items: center;
-    text-align: center;
-
-    color: #5F1F1F;
-
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    width: 8rem;
-    margin-right: 50px;
-    margin-left: 50px;
-}
-
 .top-page {
     background-color: gray;
     background-image: url("../image/background.jpg");
@@ -76,14 +6,18 @@
     background-position: center center;
 }
 
-.page-height {
-    height: 100vh;
-    width: 100%;
-}
-
 .blur-effect {
     width: 100%;
     height: 100%;
     background: rgba(255, 255, 255, 0.01);
     backdrop-filter: blur(3px);
+}
+
+.title-page {
+    padding-top: 90px; 
+    color: #5F1F1F; 
+    font-family: 'Rationale'; 
+    font-weight: bold; 
+    font-size: 72pt;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }

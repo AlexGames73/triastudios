@@ -11,25 +11,25 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Rationale&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/games.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand navbar-dark fixed-top justify-content-center" style="background-color: #bbbbbb00;">
+    <nav class="navbar navbar-expand navbar-dark fixed-top justify-content-center">
         <div class="container justify-content-center">
             <div class="navbar-nav">
                 <ul class="nav justify-content-between">
-                    <li class="nav-item">
-                        <a class="nav-link" href="games.html"
-                            style="color: #5F1F1F; font-family: 'Rationale'; font-weight: bold; font-size: 36pt;">GAMES</a>
+                    <li class="nav-item position-relative">
+                        <a class="nav-link text-style left" href="games.html">GAMES</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">
                             <img src="static/image/TRIAlogo.png" width="70px" height="70px" alt="LOGO">
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="news.html"
-                            style="color: #5F1F1F; font-family: 'Rationale'; font-weight: bold; font-size: 36pt;">NEWS</a>
+                    <li class="nav-item position-relative">
+                        <a class="nav-link text-style right" href="news.html">NEWS</a>
                     </li>
                 </ul>
             </div>
@@ -38,103 +38,52 @@
 
     <div id="carouselId" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
-            <li data-target="#carouselId" data-slide-to="0" class="active" style="background-color: black;"></li>
-            <li data-target="#carouselId" data-slide-to="1" style="background-color: black;"></li>
-            <li data-target="#carouselId" data-slide-to="2" style="background-color: black;"></li>
+            <li class="game-page-indicator" data-target="#carouselId" data-slide-to="0" class="active"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-                <div alt="First slide" style="width: 100%; height: 100vh;">
-                    <div class="position-relative" style="height: 100%; width: 800px; margin-left: auto; margin-right: auto;">
-                        <div class="row align-items-center position-absolute" style="top: 33%; transform: translateY(-50%); width: 100%; height: 30%;">
-                            <div class="col-sm h-100" style="padding: 5px;">
-                                <div class="w-100 h-100" style="background-image: url('static/image/background.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
+                <div class="games-slide" alt="First slide">
+                    <div class="page-content">
+                        <div class="row justify-content-center">
+                            <div class="col-3 card-game">
+                                <div class="card text-white">
+                                    <div class="card-img-top" style="background-image: url('static/image/background.jpg');"></div>
+                                    <div class="card-img-overlay game-card-title">
+                                        <div class="game-card-gradient"></div>
+                                        <h5 class="card-title">War Of States</h5>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-sm h-100" style="padding: 5px;">
-                                <div class="w-100 h-100" style="background-image: url('static/image/background.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
-                            </div>
-                            <div class="col-sm h-100" style="padding: 5px;">
-                                <div class="w-100 h-100" style="background-image: url('static/image/background.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
-                            </div>
-                        </div>
-                        <div class="row align-items-center position-absolute" style="top: 66%; transform: translateY(-50%); width: 100%; height: 30%;">
-                            <div class="col-sm h-100" style="padding: 5px;">
-                                <div class="w-100 h-100" style="background-image: url('static/image/background.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
-                            </div>
-                            <div class="col-sm h-100" style="padding: 5px;">
-                                <div class="w-100 h-100" style="background-image: url('static/image/background.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
-                            </div>
-                            <div class="col-sm h-100" style="padding: 5px;">
-                                <div class="w-100 h-100" style="background-image: url('static/image/background.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
+                            <div class="col-3 card-game">
+                                <div class="card text-white">
+                                    <div class="card-img-top" style="background-image: url('static/image/TRIAlogo.png');"></div>
+                                    <div class="card-img-overlay game-card-title">
+                                        <div class="game-card-gradient"></div>
+                                        <h5 class="card-title">Hero On Rope</h5>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div alt="Second slide" style="width: 100%; height: 100vh;">
-                    <div class="position-relative" style="height: 100%; width: 800px; margin-left: auto; margin-right: auto;">
-                        <div class="row align-items-center position-absolute" style="top: 33%; transform: translateY(-50%); width: 100%; height: 30%;">
-                            <div class="col-sm h-100" style="padding: 5px;">
-                                <div class="w-100 h-100" style="background-image: url('static/image/background.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
-                            </div>
-                            <div class="col-sm h-100" style="padding: 5px;">
-                                <div class="w-100 h-100" style="background-image: url('static/image/background.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
-                            </div>
-                            <div class="col-sm h-100" style="padding: 5px;">
-                                <div class="w-100 h-100" style="background-image: url('static/image/background.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
-                            </div>
-                        </div>
-                        <div class="row align-items-center position-absolute" style="top: 66%; transform: translateY(-50%); width: 100%; height: 30%;">
-                            <div class="col-sm h-100" style="padding: 5px;">
-                                <div class="w-100 h-100" style="background-image: url('static/image/background.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
-                            </div>
-                            <div class="col-sm h-100" style="padding: 5px;">
-                                <div class="w-100 h-100" style="background-image: url('static/image/background.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
-                            </div>
-                            <div class="col-sm h-100" style="padding: 5px;">
-                                <div class="w-100 h-100" style="background-image: url('static/image/background.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div alt="Third slide" style="width: 100%; height: 100vh;">
-                    <div class="position-relative" style="height: 100%; width: 800px; margin-left: auto; margin-right: auto;">
-                        <div class="row align-items-center position-absolute" style="top: 33%; transform: translateY(-50%); width: 100%; height: 30%;">
-                            <div class="col-sm h-100" style="padding: 5px;">
-                                <div class="w-100 h-100" style="background-image: url('static/image/background.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
-                            </div>
-                            <div class="col-sm h-100" style="padding: 5px;">
-                                <div class="w-100 h-100" style="background-image: url('static/image/background.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
-                            </div>
-                            <div class="col-sm h-100" style="padding: 5px;">
-                                <div class="w-100 h-100" style="background-image: url('static/image/background.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
-                            </div>
-                        </div>
-                        <div class="row align-items-center position-absolute" style="top: 66%; transform: translateY(-50%); width: 100%; height: 30%;">
-                            <div class="col-sm h-100" style="padding: 5px;">
-                                <div class="w-100 h-100" style="background-image: url('static/image/background.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
-                            </div>
-                            <div class="col-sm h-100" style="padding: 5px;">
-                                <div class="w-100 h-100" style="background-image: url('static/image/background.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
-                            </div>
-                            <div class="col-sm h-100" style="padding: 5px;">
-                                <div class="w-100 h-100" style="background-image: url('static/image/background.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
+                        <div class="row justify-content-center">
+                            <div class="col-3 card-game">
+                                <div class="card text-white">
+                                    <div class="card-img-top" style="background-image: url('static/image/TRIAlogo.png');"></div>
+                                    <div class="card-img-overlay game-card-title">
+                                        <div class="game-card-gradient"></div>
+                                        <h5 class="card-title">Hero On Rope</h5>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev"
-            style="background: linear-gradient(90deg, gray, #00000000);">
+        <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next"
-            style="background: linear-gradient(-90deg, gray, #00000000);">
+        <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>

@@ -11,64 +11,65 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Rationale&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/news.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand navbar-dark fixed-top justify-content-center" style="background-color: #bbbbbb00;">
+    <nav class="navbar navbar-expand navbar-dark fixed-top justify-content-center">
         <div class="container justify-content-center">
             <div class="navbar-nav">
                 <ul class="nav justify-content-between">
-                    <li class="nav-item">
-                        <a class="nav-link" href="games.html"
-                            style="color: #5F1F1F; font-family: 'Rationale'; font-weight: bold; font-size: 36pt;">GAMES</a>
+                    <li class="nav-item position-relative">
+                        <a class="nav-link text-style left" href="games.html">GAMES</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">
                             <img src="static/image/TRIAlogo.png" width="70px" height="70px" alt="LOGO">
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="news.html"
-                            style="color: #5F1F1F; font-family: 'Rationale'; font-weight: bold; font-size: 36pt;">NEWS</a>
+                    <li class="nav-item position-relative">
+                        <a class="nav-link text-style right" href="news.html">NEWS</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <main class="container w-100 position-relative" style="height: 100vh; min-height: 900px;">
-        <div class="jumbotron position-absolute"
-            style="top: 25%; transform: translateY(-50%); padding-top: 10px; padding-bottom: 10px;">
-            <h1 class="display-4">Hello, world!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
-                to featured content or information.</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-        </div>
-        <div class="jumbotron position-absolute"
-            style="top: 50%; transform: translateY(-50%); padding-top: 10px; padding-bottom: 10px;">
-            <h1 class="display-4">Hello, world!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
-                to featured content or information.</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-        </div>
-        <div class="jumbotron position-absolute"
-            style="top: 75%; transform: translateY(-50%); padding-top: 10px; padding-bottom: 10px;">
-            <h1 class="display-4">Hello, world!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
-                to featured content or information.</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-        </div>
-        <div class="position-absolute" style="top:95%; transform: translateY(-100%); left: 0; right: 0;">
-            <ul class="pagination justify-content-center" style="margin-bottom: 0px;">
-                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">Next</a></li>
-            </ul>
-        </div>
-        <div class="position-absolute" style="top:95%; transform: translateY(-100%); right: 0;">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Subscribe</button>
+    <main class="container page-height">
+        <div class="page-content">
+            <div class="jumbotron new-jumbo">
+                <h1 class="display-4">Hello, world!</h1>
+                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
+                    to featured content or information.</p>
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </div>
+            <div class="jumbotron new-jumbo">
+                <h1 class="display-4">Hello, world!</h1>
+                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
+                    to featured content or information.</p>
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </div>
+            <div class="jumbotron new-jumbo">
+                <h1 class="display-4">Hello, world!</h1>
+                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
+                    to featured content or information.</p>
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </div>
+            <div class="new-jumbo row">
+                <div class="col-10">
+                    <ul class="pagination justify-content-start" style="margin-bottom: 0px;">
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </div>
+                <div class="col-2 text-right">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Subscribe</button>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -78,7 +79,7 @@
             <div class="modal-content">
                 <form>
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Email Subscribe</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>

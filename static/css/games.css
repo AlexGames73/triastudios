@@ -1,0 +1,85 @@
+.card-text {
+    justify-self: start;
+    height: 100px;
+    overflow: hidden;
+}
+
+.card {
+    width: 100%;
+    transition: background-color .5s;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 20rem;
+}
+
+.card-game {
+    padding: 10px;
+}
+
+.games-slide {
+    width: 100%;
+    height: 100vh;
+}
+
+.card-title {
+    width: 90%;
+}
+
+.carousel-control-prev {
+    background: linear-gradient(90deg, gray, #00000000);
+}
+
+.carousel-control-next {
+    background: linear-gradient(-90deg, gray, #00000000);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+
+.game-card-gradient {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(60deg, rgba(255, 0, 0, 0.39), rgba(17, 0, 255, 0.71));
+    opacity: 0;
+    transition: opacity .5s ease-out;
+}
+
+.game-card-title:hover > .game-card-gradient{
+    opacity: 1;
+}
+
+.game-card-title {
+    width: 100%;
+    height: 100%;
+    padding: 0 !important;
+    text-align: center;
+}
+
+    .game-card-title:hover {
+        cursor: pointer;
+    }
+
+        .game-card-title:hover > .card-title {
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 36pt;
+        }
+
+    .game-card-title .card-title {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        font-size: 24pt;
+        transform: translate(-50%, -100%);
+        transition: top .5s, transform .5s, font-size .5s;
+    }
+
+.game-page-indicator {
+    background-color: black !important;
+}
