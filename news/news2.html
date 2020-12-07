@@ -6,13 +6,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>TriaStudios</title>
+    <title>TriaStudios | News</title>
     <!-- CSS only -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Rationale&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="static/css/main.css">
-    <link rel="stylesheet" href="static/css/news.css">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" href="../static/css/news.css">
+    <link rel="icon" type="image/png" href="../static/image/TRIAlogo.png" />
 </head>
 
 <body>
@@ -21,15 +22,15 @@
             <div class="navbar-nav">
                 <ul class="nav justify-content-between">
                     <li class="nav-item position-relative">
-                        <a class="nav-link text-style left" href="games.html">GAMES</a>
+                        <a class="nav-link text-style left" href="../games.html">GAMES</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">
-                            <img src="static/image/TRIAlogo.png" width="70px" height="70px" alt="LOGO">
+                        <a class="nav-link" href="../index.html">
+                            <img src="../static/image/TRIAlogo.png" width="70px" height="70px" alt="LOGO">
                         </a>
                     </li>
                     <li class="nav-item position-relative">
-                        <a class="nav-link text-style right" href="news.html">NEWS</a>
+                        <a class="nav-link text-style right" href="news1.html">NEWS</a>
                     </li>
                 </ul>
             </div>
@@ -39,31 +40,20 @@
     <main class="container page-height">
         <div class="page-content">
             <div class="jumbotron new-jumbo">
-                <h1 class="display-4">Hello, world!</h1>
-                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
-                    to featured content or information.</p>
-                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                <h1 class="display-4">War Of States (Early Access)</h1>
+                <p class="lead">The long-awaited game is finally out</p>
+                <a class="btn btn-outline-primary btn-lg" href="#" role="button" data-toggle="modal" data-target="#new2">What is this game?</a>
             </div>
             <div class="jumbotron new-jumbo">
-                <h1 class="display-4">Hello, world!</h1>
-                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
-                    to featured content or information.</p>
-                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-            </div>
-            <div class="jumbotron new-jumbo">
-                <h1 class="display-4">Hello, world!</h1>
-                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
-                    to featured content or information.</p>
-                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                <h1 class="display-4">Hey, mates!</h1>
+                <p class="lead">TriaStudios' site has already opened!</p>
+                <a class="btn btn-outline-primary btn-lg" href="#" role="button" data-toggle="modal" data-target="#new1">What are you talking about?</a>
             </div>
             <div class="new-jumbo row">
                 <div class="col-10">
                     <ul class="pagination justify-content-start" style="margin-bottom: 0px;">
-                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        <li class="page-item"><a class="page-link" href="news1.html">1</a></li>
+                        <li class="page-item"><a class="page-link" href="news2.html">2</a></li>
                     </ul>
                 </div>
                 <div class="col-2 text-right">
@@ -74,8 +64,53 @@
     </main>
 
     <!-- Modal -->
+    <div class="modal fade" id="new1" tabindex="-1" aria-labelledby="new1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="new1Label">Hey, mates!</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5>TriaStudios' site has already opened!</h5>
+                    <p>
+                        Congratulations! Our web site has already opened!
+                        <br/>
+                        Here you can read news about teasers and announcements of our games.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="new2" tabindex="-1" aria-labelledby="new2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="new2Label">War Of States (Early Access)</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5>The long-awaited game is finally out</h5>
+                    <p>
+                        The long-awaited game unexpectedly came out.
+                        <br/>
+                        Capture territories and gain superiority among other players!
+                    </p>
+                    <a href="https://play.google.com/store/apps/details?id=com.tripplea.warofstates" target="_blank">Run to play!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <form>
                     <div class="modal-header">

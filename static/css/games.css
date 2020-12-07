@@ -1,3 +1,7 @@
+.row {
+    height: calc(20rem + 20px);
+}
+
 .card-text {
     justify-self: start;
     height: 100px;
@@ -5,15 +9,21 @@
 }
 
 .card {
-    width: 100%;
+    position: absolute;
+    height: 20rem;
+    width: 20rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     transition: background-color .5s;
     border-radius: 10px;
     overflow: hidden;
-    height: 20rem;
 }
 
 .card-game {
+    position: relative;
     padding: 10px;
+    text-align: center;
 }
 
 .games-slide {
@@ -36,7 +46,7 @@
 .card-img-top {
     width: 100%;
     height: 100%;
-    background-color: gray;
+    background-color: rgba(0, 0, 0, 0.1);
     background-size:     cover;
     background-repeat:   no-repeat;
     background-position: center center;
@@ -69,6 +79,7 @@
             top: 50%;
             transform: translate(-50%, -50%);
             font-size: 36pt;
+            text-shadow: 0 50px 15px black;
         }
 
     .game-card-title .card-title {
@@ -76,8 +87,9 @@
         top: 90%;
         left: 50%;
         font-size: 24pt;
+        text-shadow: 0 2px 3px black;
         transform: translate(-50%, -100%);
-        transition: top .5s, transform .5s, font-size .5s;
+        transition: top .5s, transform .5s, font-size .5s, text-shadow .5s;
     }
 
 .game-page-indicator {
