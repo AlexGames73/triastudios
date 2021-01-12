@@ -22,10 +22,10 @@
             <div class="navbar-nav">
                 <ul class="nav justify-content-between">
                     <li class="nav-item position-relative">
-                        <a class="nav-link text-style left" href="../games.html">GAMES</a>
+                        <a class="nav-link text-style left" href="../index.html#games">GAMES</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../index.html">
+                        <a class="nav-link" href="../index.html#main">
                             <img src="../static/image/TRIAlogo.png" width="70px" height="70px" alt="LOGO">
                         </a>
                     </li>
@@ -112,7 +112,7 @@
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <form>
+                <form id="subscribeForm">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Email Subscribe</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -124,12 +124,13 @@
                             <label for="exampleInputEmail1">Email address</label>
                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                             pattern="(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|&quot;(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*&quot;)@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])"
-                            required>
+                            required
+                            name="email">
                             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                        <button type="submit" class="btn btn-primary" onclick="return submitSubscribe(event)">Subscribe</button>
                     </div>
                 </form>
             </div>
@@ -146,6 +147,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+        <script src="../static/js/index.js"></script>
 </body>
 
 </html>
